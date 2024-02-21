@@ -213,6 +213,11 @@ def main():
         model = torchvision.models.resnet50(pretrained=pretrained)
         d = model.fc.in_features
         model.fc = nn.Linear(d, n_classes)
+# added resnet18 option
+    elif args.model == 'resnet18':
+        model = torchvision.models.resnet18(pretrained=pretrained)
+        d = model.fc.in_features
+        model.fc = nn.Linear(d, n_classes)
     elif args.model == 'resnet34':
         model = torchvision.models.resnet34(pretrained=pretrained)
         d = model.fc.in_features
