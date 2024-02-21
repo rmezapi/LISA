@@ -20,6 +20,7 @@ model_attributes = {
         'target_resolution': (224, 224),
         'flatten': False
     },
+# added resnet18 option
     'resnet18': {
         'feature_type': 'image',
         'target_resolution': (224, 224),
